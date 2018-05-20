@@ -6,7 +6,7 @@ import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
 import Icon from 'material-ui/Icon';
 
-import './App.css';
+import MainBlock from '../../containers/main-block'
 
 class App extends Component {
   fetchUsers = () => {
@@ -32,15 +32,16 @@ class App extends Component {
         </AppBar>
 
         <div className="App-intro">
+          <MainBlock />
         </div>
 
-        <Button
-          variant="raised"
-          color="secondary"
-          onClick={this.fetchUsers}
-        >
-          Check server
-        </Button>
+        {/*<Button*/}
+          {/*variant="raised"*/}
+          {/*color="secondary"*/}
+          {/*onClick={this.fetchUsers}*/}
+        {/*>*/}
+          {/*Check server*/}
+        {/*</Button>*/}
       </div>
     );
   }
