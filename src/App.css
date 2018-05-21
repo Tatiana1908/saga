@@ -8,7 +8,77 @@
 }
 .App-intro {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  /*flex-direction: column;*/
+  width: 85%;
+  margin: 0 auto;
 }
 
+.table-header th{
+  border: 1px solid black;
+  padding: 10px 20px;
+  background: lightgray;
+
+}
+table{
+  border-collapse: collapse;
+}
+.table-body td{
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+.table-body tr:nth-child(2n){
+  background: lightcyan;
+}
+aside{
+  width: 20%;
+  position: fixed;
+}
+ul li{
+  list-style: none;
+}
+ul{
+  padding-left: 0;
+}
+main{
+  margin: 0 auto;
+}
+.btn-default{
+  margin-left: auto;
+  margin-bottom: 40px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  display: flex;
+}
+.overlay{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .3);
+}
+.modal{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px 50px;
+}
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  margin: 10px 0;
+  border: 1px solid grey;
+  padding: 10px;
+}

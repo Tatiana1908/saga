@@ -7,14 +7,10 @@ import IconButton from 'material-ui/IconButton';
 import Icon from 'material-ui/Icon';
 
 import MainBlock from '../../containers/main-block'
+import Aside from '../aside/index'
+import Modal from '../../containers/modal/index'
 
 class App extends Component {
-  fetchUsers = () => {
-    fetch('/api/users')
-      .then(res => res.text())
-      .then(alert)
-      .catch(alert);
-  }
 
   render() {
     return (
@@ -32,16 +28,10 @@ class App extends Component {
         </AppBar>
 
         <div className="App-intro">
+          <Aside />
           <MainBlock />
+          <Modal />
         </div>
-
-        {/*<Button*/}
-          {/*variant="raised"*/}
-          {/*color="secondary"*/}
-          {/*onClick={this.fetchUsers}*/}
-        {/*>*/}
-          {/*Check server*/}
-        {/*</Button>*/}
       </div>
     );
   }

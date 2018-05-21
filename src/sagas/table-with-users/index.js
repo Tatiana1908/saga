@@ -1,9 +1,9 @@
 import { fork, takeEvery, call, put } from 'redux-saga/effects'
 
-import { getUsers as getUsersAction } from '../../store/table-with-users/actions'
+import { getUsers as getUsersAction, setUsers } from '../../store/table-with-users/actions'
 import { getUsers } from '../../api'
 
-export default function * todoListSaga() {
+export default function * getTableSaga() {
   yield fork(getUsersWatcher)
 }
 
@@ -12,6 +12,6 @@ function * getUsersWatcher() {
 }
 
 function * getUsersWorker() {
-  const users = yield call(getUsers)
+  const users = yield call(getUsers);
   yield put(setUsers(users))
 }
