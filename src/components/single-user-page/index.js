@@ -21,7 +21,7 @@ class SingleUserPage extends Component{
   render() {
       const user = this.props.user[0];
       if(user) {
-        const { firstName, lastName, age, visits} = user;
+        const { firstName, lastName, age, visits, progress, status} = user;
         let name = firstName[0].toUpperCase() + firstName.slice(1)
         let surname = lastName[0].toUpperCase() + lastName.slice(1)
         return(
@@ -38,6 +38,12 @@ class SingleUserPage extends Component{
             <br />
             <span className="field-name">Visits: </span>
             <span>{visits}</span>
+            <br />
+            <span className="field-name">Progress: </span>
+            <span>{progress}</span>
+            <br />
+            <span className="field-name">Status: </span>
+            <span>{status}</span>
             <br />
           </div>)
       } else{

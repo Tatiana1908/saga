@@ -8,7 +8,7 @@ import Icon from 'material-ui/Icon';
 import { BrowserRouter } from 'react-router-dom'
 
 
-import Router from '../../components/router/index'
+import Router from '../../router/index'
 import Aside from '../aside/index'
 import Modal from '../../containers/modal/index'
 

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router'
 import { Switch} from 'react-router-dom'
-import MainBlock from '../../containers/main-block/index'
-import SingleUser from '../../containers/single-user-page/index'
-import Start from '../first-screen'
+import MainBlock from '../containers/main-block/index'
+import SingleUser from '../containers/single-user-page/index'
+import Start from '../components/first-screen'
 
 export default class Router extends Component {
   render () {

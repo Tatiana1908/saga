@@ -10,8 +10,10 @@ export const postUsers = (user) => api.post('users', {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
     },
-})
+});
 
 export const getUser = id => api.get(`users?id=${id}`);
 
-export const deleteUser = (id) => api.delete(`users/${id}`)
+export const deleteUser = (id) => api.delete(`users/${id}`);
+
+export const userFilter = (data) => api.get(`users?${data.option}=${data.value}`);

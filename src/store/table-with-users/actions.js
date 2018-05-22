@@ -21,3 +21,11 @@ export const deleteUser = id => ({
 })
 
 export const removedAction = createAction('removedAction')
+
+
+export const getUsersByFilter = value => ({
+  type: 'getUsersByFilter',
+  payload: value
+})
+
+export const filteredUsers = createAction('filteredUsers')
