@@ -5,7 +5,7 @@ import { openModal } from '../../store/add-user-btn/index'
 import { addNewUser } from '../../store/table-with-users/actions'
 const mapStateToProps = state => {
   return {
-    isOpen: state.isOpen
+    isOpen: state.reducer.isOpen
   }
 }
 

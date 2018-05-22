@@ -5,9 +5,9 @@ import { getUsers } from '../../store/table-with-users/actions'
 // import {selectUsers} from '../../selectors/index'
 
 const mapStateToProps = state => {
+  console.log(state);
   return {
-    users: state.users,
-
+    users: state.reducer.users,
   }
 }
 

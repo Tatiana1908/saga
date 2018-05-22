@@ -1,6 +1,6 @@
 import { fork, takeEvery, call, put } from 'redux-saga/effects'
 import { delay } from 'redux-saga'
-import { addNewUser, setUser } from '../../store/table-with-users/actions'
+import { setUser } from '../../store/table-with-users/actions'
 import { postUsers } from '../../api'
 
 export default function * addUserSaga() {

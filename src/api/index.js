@@ -12,10 +12,6 @@ export const postUsers = (user) => api.post('users', {
     },
 })
 
-// export const addNewUser = (user) => api.put(`users/${user.id}`, {
-//     body: JSON.stringify(user),
-//     headers: {
-//         'Accept': 'application/json',
-//         'Content-Type': 'application/json'
-//     },
-// })
+export const getUser = id => api.get(`users?id=${id}`);
+
+export const deleteUser = (id) => api.delete(`users/${id}`)

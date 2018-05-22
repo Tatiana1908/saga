@@ -7,8 +7,6 @@ export default class TableWithUsers extends Component{
     this.props.getUsers()
   }
   render() {
-    console.log(this.props.users)
-
     return(
         <table>
           <thead className ="table-header">

@@ -12,11 +12,14 @@
   },
   "dependencies": {
     "babel-eslint": "^8.2.3",
+    "history": "^4.7.2",
     "json-server": "^0.12.2",
     "material-ui": "^1.0.0-beta.44",
+    "ramda": "^0.25.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
     "redux-devtools-extension": "^2.13.2",
@@ -38,6 +41,9 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "namor": "^1.0.1"
+    "namor": "^1.0.1",
+    "react-router": "^4.2.0",
+    "react-router-redux": "^4.0.8",
+    "redux-actions": "^2.3.2"
   }
 }
