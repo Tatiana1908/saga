@@ -13,8 +13,7 @@ import Modal from '../../containers/modal/index'
 class App extends Component {
 
   render() {
-    return (
-      <div className="App">
+    return (<div className="App">
         <AppBar position="fixed">
           <Toolbar>
             <IconButton className="App-menu-btn" color="inherit" aria-label="Menu">

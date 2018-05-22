@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router'
 
-export default class TableRow extends Component{
+class TableRow extends Component{
+  // onRowClick = () =>{
+  //   this.props.history.push(`user/${this.props.userInfo.id}`)
+  // }
   render() {
     const firstName = this.props.userInfo.firstName[0].toUpperCase() + this.props.userInfo.firstName.slice(1);
     const lastName = this.props.userInfo.lastName[0].toUpperCase() + this.props.userInfo.lastName.slice(1)
@@ -16,3 +20,5 @@ export default class TableRow extends Component{
     )
   }
 }
+
+export default withRouter(TableRow)

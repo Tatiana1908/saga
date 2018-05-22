@@ -1,8 +1,13 @@
 import { handleActions } from 'redux-actions'
 import { append } from 'ramda'
 
+import {combineReducers} from 'redux'
+
+// import { routerReducer} from 'react-router-redux'
+
 import * as actions from './actions'
 import {openModal} from '../add-user-btn/index'
+
 const initialState = {
   users: [],
   isOpen: false,
@@ -24,4 +29,8 @@ const reducer = handleActions({
   }),
 }, initialState);
 
+// export default combineReducers({
+//   routing: routerReducer,
+//   reducer,
+// })
 export default reducer
