@@ -9,6 +9,6 @@ export default class AddUserBtn extends Component{
 
   render(){
     return(
-    <button onClick= {this.onClick} className="btn-default">Add user</button>)
+    <button onClick={this.onClick} className="btn-default">Add user</button>)
   }
  }

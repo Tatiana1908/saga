@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router'
 import { Switch} from 'react-router-dom'
-import MainBlock from '../containers/main-block/index'
+import MainBlock from '../components/main-block/index'
 import SingleUser from '../containers/single-user-page/index'
 import Start from '../components/first-screen'
 

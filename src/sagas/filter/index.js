@@ -12,7 +12,9 @@ function * getUsersByFilterWatcher() {
 
 function * getUsersByFilterWorker(data) {
   const users = yield call(userFilter, data.payload);
-
+  if(!users.length){
+    alert('Nothing fit')
+  }
   yield put(filteredUsers(users));
 
 }

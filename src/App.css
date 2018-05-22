@@ -75,7 +75,12 @@ main{
   flex-direction: column;
   align-items: center;
 }
-
+.addForm input{
+  width: 200px;
+}
+.addForm .btn-default{
+  margin-bottom: 0;
+}
 input{
   margin: 10px 0;
   border: 1px solid grey;
