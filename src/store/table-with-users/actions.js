@@ -8,4 +8,24 @@ export const addNewUser = user => ({
 })
 export const setUser = createAction('setUser')
 
-// export const updateUsers = createAction('updateUsers')
+export const findUser = id => ({
+  type: 'findUser',
+  payload: id
+})
+export const giveUser = createAction('giveUser')
+
+
+export const deleteUser = id => ({
+  type: 'deleteUser',
+  payload: id
+})
+
+export const removedAction = createAction('removedAction')
+
+
+export const getUsersByFilter = value => ({
+  type: 'getUsersByFilter',
+  payload: value
+})
+
+export const filteredUsers = createAction('filteredUsers')

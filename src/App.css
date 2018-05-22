@@ -30,7 +30,6 @@ table{
   background: lightcyan;
 }
 aside{
-  width: 20%;
   position: fixed;
 }
 ul li{
@@ -81,4 +80,26 @@ input{
   margin: 10px 0;
   border: 1px solid grey;
   padding: 10px;
+}
+.greeting{
+  margin-left: 40%;
+}
+.user{
+  margin-left: 50%;
+  margin-top: 20px;
+
+}
+.field-name{
+  font-size: 18px;
+  font-weight: 600;
+}
+.remove-btn{
+  margin-left: 25%;
+}
+.filter-form{
+  display: flex;
+  margin-bottom: 20px;
+}
+.filter-form input{
+  margin: 0 10px;
 }

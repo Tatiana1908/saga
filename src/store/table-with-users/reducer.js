@@ -3,7 +3,7 @@ import { append } from 'ramda'
 
 import {combineReducers} from 'redux'
 
-// import { routerReducer} from 'react-router-redux'
+import { routerReducer} from 'react-router-redux'
 
 import * as actions from './actions'
 import {openModal} from '../add-user-btn/index'
@@ -11,6 +11,8 @@ import {openModal} from '../add-user-btn/index'
 const initialState = {
   users: [],
   isOpen: false,
+  activeUser: {},
+  filteredUsers: [],
 };
 
 const reducer = handleActions({
@@ -24,13 +26,20 @@ const reducer = handleActions({
   [openModal]: (state) => ({
     ...state, isOpen: !state.isOpen
   }),
-  [actions.addNewUser]: (state, action) => ({
-     ...state, users: state.users.concat(action.payload)
+  [actions.giveUser]: (state,  action ) => ({
+  ...state, activeUser: action.payload
   }),
+  [actions.removedAction]: (state,  { payload: id })  => ({
+    ...state, users: state.users.filter(user => user.id !== id)
+  }),
+  [actions.filteredUsers]: (state,  action)  => ({
+    ...state, filteredUsers: action.payload
+  })
+
+
 }, initialState);
 
-// export default combineReducers({
-//   routing: routerReducer,
-//   reducer,
-// })
-export default reducer
+export default combineReducers({
+  routing: routerReducer,
+  reducer,
+})

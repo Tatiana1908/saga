@@ -177,10 +177,18 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="992" />
+    <option name="y" value="24" />
+    <option name="width" value="928" />
+    <option name="height" value="1056" />
+=======
   <component name="ProjectFrameBounds">
     <option name="x" value="331" />
     <option name="width" value="1010" />
     <option name="height" value="735" />
+>>>>>>> edf34d2d98b7fbb0922d472a787855be57f998b9
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
