@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import App from './components/app/app';
 import theme from './styles/material-ui-theme';
 import './App.css';
-import store from './store/index'
+import store from './store/index';
 
 
 ReactDOM.render(
@@ -16,7 +16,6 @@ ReactDOM.render(
         <App />
       </MuiThemeProvider>
     </Provider>
-
-,document.getElementById('root'),
+  ,document.getElementById('root'),
 
 );

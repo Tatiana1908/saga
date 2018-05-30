@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import TableRow from '../table-row/index'
 
+
 export default class TableWithUsers extends Component{
   componentDidMount() {
     this.props.getUsers()

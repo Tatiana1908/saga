@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
-import { withRouter } from 'react-router'
+import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 
 
 class SingleUserPage extends Component{
 
   componentWillMount(){
-    this.id = Number(this.props.ownProps.match.params.id)
+    this.id = Number(this.props.ownProps.match.params.id);
     this.props.findUser( this.id )
   }
   onDeleteUser = (e) => {
     e.preventDefault()
-    let confirm = window.confirm('Are you sure?')
+    let confirm = window.confirm('Are you sure?');
 
     if (confirm) {
       this.props.deleteUser(this.id)
@@ -22,8 +22,8 @@ class SingleUserPage extends Component{
       const user = this.props.user[0];
       if(user) {
         const { firstName, lastName, age, visits, progress, status} = user;
-        let name = firstName[0].toUpperCase() + firstName.slice(1)
-        let surname = lastName[0].toUpperCase() + lastName.slice(1)
+        let name = firstName[0].toUpperCase() + firstName.slice(1);
+        let surname = lastName[0].toUpperCase() + lastName.slice(1);
         return(
           <div className="user">
             <button className="btn-default remove-btn" onClick={this.onDeleteUser}>Del</button>
@@ -50,7 +50,6 @@ class SingleUserPage extends Component{
         return (null)
       }
   }
-
 }
 
 export default withRouter(SingleUserPage)
