@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 
 
 export default class AddUserBtn extends Component{
-  onClick = (e) =>{
-    e.preventDefault()
+  onClick = () =>{
     this.props.openModal()
   }
 

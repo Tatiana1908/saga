@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import SingleUser from '../../components/single-user-page/index'
+import SingleUserPage from '../../components/single-user-page/index'
 import {findUser, deleteUser} from '../../store/table-with-users/actions';
 
 
@@ -17,4 +17,4 @@ const mapDispatchToProps = {
 
 }
 
-export default connect( mapStateToProps, mapDispatchToProps )(SingleUser)
+export default connect( mapStateToProps, mapDispatchToProps)(SingleUserPage)

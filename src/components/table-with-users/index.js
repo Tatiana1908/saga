@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import TableRow from '../table-row/index'
+import TableRow  from '../table-row/index';
 
 
 export default class TableWithUsers extends Component{
@@ -10,7 +10,7 @@ export default class TableWithUsers extends Component{
   render() {
     return(
         <table>
-          <thead className ="table-header">
+          <thead className="table-header">
             <th>Name</th>
             <th>LastName</th>
             <th>Visits</th>
@@ -20,9 +20,9 @@ export default class TableWithUsers extends Component{
           </thead>
           <tbody className="table-body">
             {
-              this.props.filteredUsers.length
-              ? this.props.filteredUsers.map(user => <TableRow key ={user.id} userInfo={user} />)
-              : this.props.users.map( user => <TableRow key ={user.id} userInfo={user} /> )
+              // this.props.filteredUsers
+              // ? this.props.filteredUsers.map(user => <TableRow key ={user.id} userInfo={user} />):
+              this.props.users.map( user => <TableRow key={user.id} userInfo={user} /> )
             }
           </tbody>
         </table>

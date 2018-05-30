@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
 
-class SingleUserPage extends Component{
+export class SingleUserPage extends Component{
 
   componentWillMount(){
     this.id = Number(this.props.ownProps.match.params.id);
     this.props.findUser( this.id )
   }
-  onDeleteUser = (e) => {
-    e.preventDefault()
+  onDeleteUser() {
+
     let confirm = window.confirm('Are you sure?');
 
     if (confirm) {
@@ -26,24 +26,24 @@ class SingleUserPage extends Component{
         let surname = lastName[0].toUpperCase() + lastName.slice(1);
         return(
           <div className="user">
-            <button className="btn-default remove-btn" onClick={this.onDeleteUser}>Del</button>
+            <button className="btn-default remove-btn" onClick={this.onDeleteUser.bind(this)}>Del</button>
             <span className="field-name">Name: </span>
-            <span>{name}</span>
+            <span className="value">{name}</span>
             <br />
             <span className="field-name">Surname: </span>
-            <span>{surname}</span>
+            <span className="value">{surname}</span>
             <br />
             <span className="field-name">Age: </span>
-            <span>{age}</span>
+            <span className="value">{age}</span>
             <br />
             <span className="field-name">Visits: </span>
-            <span>{visits}</span>
+            <span className="value">{visits}</span>
             <br />
             <span className="field-name">Progress: </span>
-            <span>{progress}</span>
+            <span className="value">{progress}</span>
             <br />
             <span className="field-name">Status: </span>
-            <span>{status}</span>
+            <span className="value">{status}</span>
             <br />
           </div>)
       } else{
