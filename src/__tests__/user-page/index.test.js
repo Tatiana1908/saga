@@ -22,14 +22,16 @@ describe('Test user page', () => {
 
   it('render all values', () => {
     const wrapper = shallow(<SingleUserPage user={props} />);
-    expect(wrapper.find('.value').text).not.toBeNull();
+    expect(wrapper.find('.value').length).toBe(6);
   });
-  it('remove btn', () => {
+  it('remove btn handler and text', () => {
     const mockCallBack = jest.fn()
+
     SingleUserPage.prototype.onDeleteUser = mockCallBack;
     const wrapper = shallow(<SingleUserPage user={props} />);
     wrapper.find('.remove-btn').simulate('click');
     expect(mockCallBack).toHaveBeenCalled();
+    expect(wrapper.find('.remove-btn').text()).toBe('Del');
   });
 
 });
