@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TableWithUsers from '../../containers/table-with-users/index';
-import AddUserBtn from '../../containers/btn';
+import AddUserBtn from '../../containers/button';
 import FilterForm from '../../containers/filter';
 
 

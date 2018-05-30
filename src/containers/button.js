@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import AddUserBtn from '../components/btn'
+import AddUserBtn from '../components/button'
 import { openModal } from '../store/add-user-btn/index'
 
 const mapStateToProps = state => {
