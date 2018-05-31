@@ -9,9 +9,8 @@ class TableRow extends Component {
     const name = firstName[0].toUpperCase() + firstName.slice(1);
     const surname = lastName[0].toUpperCase() + lastName.slice(1);
 
-
     return (
-      <tr onClick={this.routeToUser}>
+      <tr onClick={() => this.props.history.push(`user/${ this.props.userInfo.id }`)}>
         <td>{name}</td>
         <td>{surname}</td>
         <td>{visits}</td>
@@ -20,9 +19,9 @@ class TableRow extends Component {
         <td>{status}</td>
       </tr>);
   }
-  routeToUser() {
-    this.props.history.push(`user/${ this.props.userInfo.id }`);
-  }
+  // routeToUser() {
+  //   this.props.history.push(`user/${ this.props.userInfo.id }`);
+  // }
 }
 TableRow.propTypes = {
   history: PropTypes.object,

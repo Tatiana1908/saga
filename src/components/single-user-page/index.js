@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 export class SingleUserPage extends Component {
   componentWillMount() {
+    console.log(this.props);
     this.id = Number( this.props.ownProps.match.params.id );
     this.props.findUser( this.id );
   }
@@ -45,7 +46,7 @@ export class SingleUserPage extends Component {
           <br />
         </div>);
     }
-    return (null);
+    return <div> Some text </div>;
   }
 }
 SingleUserPage.propTypes = {

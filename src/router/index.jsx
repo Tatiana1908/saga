@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router';
 import { Switch } from 'react-router-dom';
 import MainBlock from '../components/main-block/index';
-import SingleUser from '../containers/single-user-page/index';
+import UserPage from '../containers/single-user-page/index';
 import Start from '../components/first-screen';
 
 export default class Router extends Component {
@@ -10,8 +10,8 @@ export default class Router extends Component {
     return (
       <Switch>
         <Route path="/users" component={MainBlock} />
-        <Route path="/" component={Start} />
-        <Route path="/user/:id" component={SingleUser} />
+        <Route exact path="/" component={Start} />
+        <Route path="/user/:id" component={UserPage} />
       </Switch>
     );
   }

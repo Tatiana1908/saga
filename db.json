@@ -10,15 +10,6 @@
       "status": "complicated"
     },
     {
-      "id": 10,
-      "firstName": "owl",
-      "lastName": "glass",
-      "age": 10,
-      "visits": 4,
-      "progress": 81,
-      "status": "complicated"
-    },
-    {
       "id": 11,
       "firstName": "rain",
       "lastName": "picture",
