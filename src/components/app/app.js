@@ -7,13 +7,11 @@ import IconButton from 'material-ui/IconButton';
 import Icon from 'material-ui/Icon';
 import { BrowserRouter } from 'react-router-dom';
 
-
 import Router from '../../router/index';
 import Aside from '../aside/index';
 import Modal from '../../containers/modal/index';
 
 class App extends Component {
-
   render() {
     return (
       <BrowserRouter>
@@ -29,7 +27,6 @@ class App extends Component {
               <Button color="inherit">Login</Button>
             </Toolbar>
           </AppBar>
-
           <div className="App-intro">
             <Aside />
             <Router />

@@ -1,16 +1,14 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
-import AddUserBtn from '../components/button'
-import { openModal } from '../store/add-user-btn/index'
+import AddUserBtn from '../components/button';
+import { openModal } from '../store/add-user-btn/index';
 
-const mapStateToProps = state => {
-  return {
-    isOpen: state.reducer.isOpen
-  }
-}
+const mapStateToProps = state => ({
+  isOpen: state.reducer.isOpen,
+});
 
 const mapDispatchToProps = {
- openModal,
-}
+  openModal,
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(AddUserBtn)
+export default connect(mapStateToProps, mapDispatchToProps)(AddUserBtn);

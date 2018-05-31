@@ -5,13 +5,13 @@ import FilterForm from '../../containers/filter';
 
 
 export default class MainBlock extends Component {
-  render () {
-    return(
+  render() {
+    return (
       <main>
         <AddUserBtn />
         <FilterForm />
         <TableWithUsers />
       </main>
-    )
+    );
   }
 }

@@ -1,14 +1,14 @@
-import { fork, takeEvery, call, put } from 'redux-saga/effects'
-import { delay } from 'redux-saga'
-import { setUser } from '../../store/table-with-users/actions'
-import { postUsers } from '../../api'
+import { fork, takeEvery, call, put } from 'redux-saga/effects';
+import { delay } from 'redux-saga';
+import { setUser } from '../../store/table-with-users/actions';
+import { postUsers } from '../../api';
 
 export default function * addUserSaga() {
-  yield fork(addUserWatcher)
+  yield fork(addUserWatcher);
 }
 
 function * addUserWatcher() {
-  yield takeEvery('addNewUser', addUserWorker)
+  yield takeEvery('addNewUser', addUserWorker);
 }
 
 function * addUserWorker({ payload }) {
@@ -25,5 +25,4 @@ function * addUserWorker({ payload }) {
   });
 
   yield put(setUser(user));
-
 }

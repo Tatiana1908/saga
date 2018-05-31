@@ -1,16 +1,16 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
-import Modal from '../../components/modal/index'
-import { openModal } from '../../store/add-user-btn/index'
-import { addNewUser } from '../../store/table-with-users/actions'
+import Modal from '../../components/modal/index';
+import { openModal } from '../../store/add-user-btn/index';
+import { addNewUser } from '../../store/table-with-users/actions';
 const mapStateToProps = state => {
   return {
-    isOpen: state.reducer.isOpen
-  }
-}
+    isOpen: state.reducer.isOpen,
+  };
+};
 
 const mapDispatchToProps = {
-    closeModal: openModal,
-    addNewUser,
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Modal)
+  closeModal: openModal,
+  addNewUser,
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Modal);

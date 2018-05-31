@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
+import PropTypes from 'prop-types';
 
-class TableRow extends Component{
-  routeToUser = () =>{
-    this.props.history.push(`user/${this.props.userInfo.id}`)
-  }
+class TableRow extends Component {
   render() {
     const { firstName, lastName, visits, age, progress, status } = this.props.userInfo;
 
@@ -20,8 +18,14 @@ class TableRow extends Component{
         <td>{age}</td>
         <td>{progress}</td>
         <td>{status}</td>
-      </tr>)
+      </tr>);
+  }
+  routeToUser() {
+    this.props.history.push(`user/${ this.props.userInfo.id }`);
   }
 }
-
-export default withRouter(TableRow)
+TableRow.propTypes = {
+  history: PropTypes.object,
+  userInfo: PropTypes.object,
+};
+export default withRouter(TableRow);
