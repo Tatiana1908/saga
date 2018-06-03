@@ -1,7 +1,7 @@
 import FilterForm from '../../components/filter';
 import { connect } from 'react-redux';
 
-import { getUsersByFilter } from '../../store/table-with-users/actions';
+import { getUsersByFilter } from '../../store/main-store/actions';
 
 const mapStateToProps = state => {
   return {

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import SingleUserPage from '../../components/single-user-page/index';
-import {findUser, deleteUser, editUser} from '../../store/table-with-users/actions';
+import {findUser, deleteUser, editUser} from '../../store/main-store/actions';
 
 const mapStateToProps = (state, ownProps) => {
   return {

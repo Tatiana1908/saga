@@ -107,7 +107,7 @@ export class SingleUserPage extends Component {
           </div>
         </div>);
     }
-    return <div className="user"> User not found </div>;
+    return null;
   }
 }
 SingleUserPage.propTypes = {

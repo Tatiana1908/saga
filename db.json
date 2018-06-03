@@ -1,38 +1,11 @@
 {
   "users": [
     {
-      "firstName": "rain",
-      "lastName": "picture",
-      "age": "660",
-      "visits": "32",
-      "progress": "57",
-      "status": "single",
-      "id": 11
-    },
-    {
-      "firstName": "sand",
-      "lastName": "beetle",
-      "age": "9",
-      "visits": "510",
-      "progress": "96",
-      "status": "relationship",
-      "id": 12
-    },
-    {
-      "firstName": "equipment",
-      "lastName": "relation",
-      "age": "17",
-      "visits": "82",
-      "progress": "55",
-      "status": "complicated",
-      "id": 13
-    },
-    {
       "firstName": "level",
       "lastName": "angle",
       "age": "27",
-      "visits": "700",
-      "progress": "51",
+      "visits": "70",
+      "progress": "510",
       "status": "single",
       "id": 14
     },
@@ -431,6 +404,15 @@
       "progress": 0,
       "status": "1111",
       "id": 59
+    },
+    {
+      "firstName": "qwe",
+      "lastName": "qwe",
+      "age": "22",
+      "visits": 0,
+      "progress": 0,
+      "status": "free",
+      "id": 60
     }
   ]
 }

@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import Router from '../../router/index';
 import Aside from '../aside/index';
-import Modal from '../../containers/modal/index';
+import Modal from '../../containers/add-new-user-modal/index';
 
 class App extends Component {
   render() {

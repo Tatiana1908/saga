@@ -1,5 +1,6 @@
 import { createAction } from 'redux-actions';
 
+export const openModal = createAction('openModal');
 export const getUsers = createAction('getUsers');
 export const setUsers = createAction('setUsers');
 export const addNewUser = user => ({

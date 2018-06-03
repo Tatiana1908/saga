@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import AddUserBtn from '../components/button';
-import { openModal } from '../store/add-user-btn/index';
+import { openModal } from '../store/main-store/actions';
 
 const mapStateToProps = state => ({
   isOpen: state.reducer.isOpen,

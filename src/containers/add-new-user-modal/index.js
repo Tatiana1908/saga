@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 
 import Modal from '../../components/modal/index';
-import { openModal } from '../../store/add-user-btn/index';
-import { addNewUser } from '../../store/table-with-users/actions';
+import { openModal } from '../../store/main-store/actions';
+import { addNewUser } from '../../store/main-store/actions';
 const mapStateToProps = state => {
   return {
     isOpen: state.reducer.isOpen,

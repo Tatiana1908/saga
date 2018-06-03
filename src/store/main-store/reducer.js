@@ -6,7 +6,6 @@ import {combineReducers} from 'redux';
 import { routerReducer} from 'react-router-redux';
 
 import * as actions from './actions';
-import {openModal} from '../add-user-btn/index';
 
 const initialState = {
   users: [],
@@ -23,7 +22,7 @@ const reducer = handleActions({
     ...state,
     users: append(user, state.users),
   }),
-  [openModal]: (state) => ({
+  [actions.openModal]: (state) => ({
     ...state, isOpen: !state.isOpen,
   }),
   [actions.giveUser]: (state,  action ) => ({

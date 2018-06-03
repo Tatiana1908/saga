@@ -1,5 +1,5 @@
 import { fork, takeEvery, call, put } from 'redux-saga/effects';
-import { setUsers } from '../../store/table-with-users/actions';
+import { setUsers } from '../../store/main-store/actions';
 import { userFilter, getUsers} from '../../api';
 
 export default function * getUsersByFilterSaga() {

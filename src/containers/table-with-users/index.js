@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import TableWithUsers from '../../components/table-with-users';
-import { getUsers } from '../../store/table-with-users/actions';
+import { getUsers } from '../../store/main-store/actions';
 
 const mapStateToProps = state => {
   return {
