@@ -67,7 +67,7 @@
     "build": "node scripts/build.js",
     "test": "jest",
     "lint": "eslint src/**/*.js*",
-    "server": "json-server --watch db.json --port 3001",
+    "server": "json-server --watch db.json",
     "generate-users": "node generateUsers"
   },
   "devDependencies": {

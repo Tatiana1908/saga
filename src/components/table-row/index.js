@@ -19,9 +19,6 @@ class TableRow extends Component {
         <td>{status}</td>
       </tr>);
   }
-  // routeToUser() {
-  //   this.props.history.push(`user/${ this.props.userInfo.id }`);
-  // }
 }
 TableRow.propTypes = {
   history: PropTypes.object,

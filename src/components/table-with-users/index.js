@@ -8,8 +8,6 @@ export default class TableWithUsers extends Component {
     this.props.getUsers();
   }
   render() {
-    const filtered = (this.props.filteredUsers.length > 0) ? true : false;
-
     return (
       <table>
         <thead className="table-header">
@@ -21,9 +19,7 @@ export default class TableWithUsers extends Component {
           <th>Status</th>
         </thead>
         <tbody className="table-body">
-          {filtered ? this.props.filteredUsers.map(user => <TableRow key ={user.id} userInfo={user} /> )
-            : this.props.users.map( user => <TableRow key={user.id} userInfo={user} /> )
-          }
+          {this.props.users.map( user => <TableRow key={user.id} userInfo={user} /> )}
         </tbody>
       </table>
     );

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import SingleUserPage from '../../components/single-user-page/index';
-import {findUser, deleteUser} from '../../store/table-with-users/actions';
+import {findUser, deleteUser, editUser} from '../../store/table-with-users/actions';
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -12,6 +12,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = {
   deleteUser,
   findUser,
+  editUser,
 };
 
 export default connect( mapStateToProps, mapDispatchToProps)(SingleUserPage);

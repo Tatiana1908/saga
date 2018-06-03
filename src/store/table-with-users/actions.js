@@ -20,11 +20,14 @@ export const deleteUser = id => ({
   payload: id,
 });
 
+export const editUser = data => ({
+  type: 'editUser',
+  payload: data,
+});
+
 export const removedAction = createAction('removedAction');
 
 export const getUsersByFilter = value => ({
   type: 'getUsersByFilter',
   payload: value,
 });
-
-export const filteredUsers = createAction('filteredUsers');

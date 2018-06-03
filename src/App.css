@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   padding-top: 64px;
@@ -8,7 +20,6 @@
 }
 .App-intro {
   display: flex;
-  /*flex-direction: column;*/
   width: 85%;
   margin: 0 auto;
 }
@@ -29,9 +40,7 @@ table{
 .table-body tr:nth-child(2n){
   background: lightcyan;
 }
-aside{
-  position: fixed;
-}
+
 ul li{
   list-style: none;
 }
@@ -40,13 +49,26 @@ ul{
 }
 main{
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 .btn-default{
-  margin-left: auto;
-  margin-bottom: 40px;
-  padding: 10px 15px;
+  background-color: lightgrey;
+  padding: 15px 25px;
   text-transform: uppercase;
   display: flex;
+  border: none;
+  border-radius: 2px;
+}
+.btn-default:focus{
+  outline: none;
+}
+.btn-default:hover{
+  box-shadow: 1px 1px 9px 0 grey;
+}
+input{
+  margin: 10px 0;
+  border: 1px solid grey;
+  padding: 10px;
 }
 .overlay{
   position: fixed;
@@ -81,25 +103,17 @@ main{
 .addForm .btn-default{
   margin-bottom: 0;
 }
-input{
-  margin: 10px 0;
-  border: 1px solid grey;
-  padding: 10px;
-}
 .greeting{
-  margin-left: 40%;
-}
-.user{
-  margin-left: 50%;
-  margin-top: 20px;
-
+  margin: 0  auto;
 }
 .field-name{
   font-size: 18px;
   font-weight: 600;
 }
-.remove-btn{
-  margin-left: 25%;
+.add-user-btn{
+  margin-left: auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 .filter-form{
   display: flex;
@@ -107,4 +121,51 @@ input{
 }
 .filter-form input{
   margin: 0 10px;
+}
+.filter-form select{
+  padding: 5px;
+}
+/* user page styles*/
+.user{
+  margin: 0 auto;
+  text-align: left;
+}
+.actionsWithUserBtns .btn-default{
+  margin: 15px 5px;
+  display: inline-block;
+}
+.remove-btn{
+  margin-left: 25%;
+}
+.personal-user-info-block{
+  padding: 17px 0;
+}
+/* edit user */
+.user-edit-form{
+  margin: 0 auto;
+  text-align: left;
+}
+.user-edit-form input{
+  border: 0;
+}
+
+.apply-changes-btn{
+  margin: 15px 0;
+}
+
+/* aside bar */
+.aside{
+  padding: 20px;
+}
+.aside-link{
+  padding: 10px;
+  width: 100px;
+}
+.aside-link a{
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+.aside-link a:hover{
+  font-weight: 600;
 }

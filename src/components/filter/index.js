@@ -10,7 +10,7 @@ export default class FilterForm extends Component {
         <option value="age">Age</option>
       </select>
       <input type="name" ref={node => (this.searchForm = node)}/>
-      <button>OK</button>
+      <button className="btn-default">OK</button>
     </form>;
   }
   filterRequest(e) {

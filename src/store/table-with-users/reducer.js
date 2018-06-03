@@ -30,13 +30,8 @@ const reducer = handleActions({
     ...state, activeUser: action.payload,
   }),
   [actions.removedAction]: (state,  { payload: id })  => ({
-    ...state, users: state.users.filter(user => user.id !== id), filteredUsers: [],
+    ...state, users: state.users.filter(user => user.id !== id),
   }),
-  [actions.filteredUsers]: (state,  action)  => ({
-    ...state, filteredUsers: action.payload,
-  }),
-
-
 }, initialState);
 
 export default combineReducers({

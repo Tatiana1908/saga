@@ -17,3 +17,11 @@ export const getUser = id => api.get(`users?id=${id}`);
 export const deleteUser = id => api.delete(`users/${id}`);
 
 export const userFilter = data => api.get(`users?${data.option}=${data.value}`);
+
+export const editUser = data => api.put(`users/${data.id}`, {
+  body: JSON.stringify(data),
+  headers: {
+    Accept: 'application/json',
+    'Content-Type': 'application/json',
+  },
+});

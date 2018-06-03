@@ -1,6 +1,6 @@
 import { fork, takeEvery, call, put } from 'redux-saga/effects';
-import { filteredUsers } from '../../store/table-with-users/actions';
-import { userFilter } from '../../api';
+import { setUsers } from '../../store/table-with-users/actions';
+import { userFilter, getUsers} from '../../api';
 
 export default function * getUsersByFilterSaga() {
   yield fork(getUsersByFilterWatcher);
@@ -11,9 +11,12 @@ function * getUsersByFilterWatcher() {
 }
 
 function * getUsersByFilterWorker(data) {
-  const users = yield call(userFilter, data.payload);
-  if ( !users.length ) {
-    alert('Nothing fit');
+  let users;
+
+  if (!data.payload.value) {
+    users = yield call(getUsers);
+  } else {
+    users = yield call(userFilter, data.payload);
   }
-  yield put(filteredUsers(users));
+  yield put(setUsers(users));
 }
