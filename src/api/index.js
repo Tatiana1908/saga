@@ -25,3 +25,5 @@ export const editUser = data => api.put(`users/${data.id}`, {
     'Content-Type': 'application/json',
   },
 });
+
+export const signUpApi = data =>  api.get(`sign-up?login=${data.payload.login}&&password=${data.payload.password}`);

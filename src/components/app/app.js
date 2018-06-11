@@ -6,6 +6,7 @@ import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
 import Icon from 'material-ui/Icon';
 import { BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Router from '../../router/index';
 import Aside from '../aside/index';
@@ -24,7 +25,7 @@ class App extends Component {
               <Typography variant="title" color="inherit" className="App-header-title">
                 React Admin
               </Typography>
-              <Button color="inherit">Login</Button>
+              <Button color="inherit"><Link to="/login" >Login</Link></Button>
             </Toolbar>
           </AppBar>
           <div className="App-intro">

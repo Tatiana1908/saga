@@ -32,3 +32,10 @@ export const getUsersByFilter = value => ({
   type: 'getUsersByFilter',
   payload: value,
 });
+
+export const signUp = data => ({
+  type: 'signUp',
+  payload: data,
+});
+
+export const autoriseUser = createAction('autoriseUser');

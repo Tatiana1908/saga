@@ -12,6 +12,7 @@ const initialState = {
   isOpen: false,
   activeUser: {},
   filteredUsers: [],
+  autorisedUser: [],
 };
 
 const reducer = handleActions({
@@ -30,6 +31,9 @@ const reducer = handleActions({
   }),
   [actions.removedAction]: (state,  { payload: id })  => ({
     ...state, users: state.users.filter(user => user.id !== id),
+  }),
+  [actions.autoriseUser]: (state,  { payload: user })  => ({
+    ...state, autorisedUser: user,
   }),
 }, initialState);
 

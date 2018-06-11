@@ -10,15 +10,6 @@
       "id": 14
     },
     {
-      "id": 15,
-      "firstName": "use",
-      "lastName": "death",
-      "age": 26,
-      "visits": 44,
-      "progress": 28,
-      "status": "relationship"
-    },
-    {
       "id": 16,
       "firstName": "rub",
       "lastName": "order",
@@ -316,103 +307,25 @@
       "status": "relationship"
     },
     {
-      "firstName": "1",
-      "lastName": "2",
-      "age": "3",
-      "visits": 0,
-      "progress": 0,
-      "status": "4",
-      "id": 50
-    },
-    {
-      "firstName": "ss",
-      "lastName": "ss",
-      "age": "ss",
-      "visits": 0,
-      "progress": 0,
-      "status": "ss",
-      "id": 51
-    },
-    {
-      "firstName": "name",
-      "lastName": "111",
-      "age": "111",
+      "firstName": "new",
+      "lastName": "user",
+      "age": "21",
       "visits": "0",
       "progress": "0",
-      "status": "111",
-      "id": 52
+      "status": "single",
+      "id": 50
+    }
+  ],
+  "sign-up": [
+    {
+      "login": "admin",
+      "password": "admin",
+      "preferences": true
     },
     {
-      "firstName": "1",
-      "lastName": "2",
-      "age": "3",
-      "visits": 0,
-      "progress": 0,
-      "status": "4",
-      "id": 53
-    },
-    {
-      "firstName": "1",
-      "lastName": "1",
-      "age": "1",
-      "visits": 0,
-      "progress": 0,
-      "status": "2",
-      "id": 54
-    },
-    {
-      "firstName": "ss",
-      "lastName": "ssss",
-      "age": "ddddd",
-      "visits": 0,
-      "progress": 0,
-      "status": "ddd",
-      "id": 55
-    },
-    {
-      "firstName": "ter",
-      "lastName": "ert",
-      "age": "ert",
-      "visits": 0,
-      "progress": 0,
-      "status": "ret",
-      "id": 56
-    },
-    {
-      "firstName": "sss",
-      "lastName": "ssss",
-      "age": "ss",
-      "visits": 0,
-      "progress": 0,
-      "status": "ss",
-      "id": 57
-    },
-    {
-      "firstName": "nn",
-      "lastName": "nn",
-      "age": "nn",
-      "visits": 0,
-      "progress": 0,
-      "status": "nn",
-      "id": 58
-    },
-    {
-      "firstName": "111",
-      "lastName": "111",
-      "age": "1111",
-      "visits": 0,
-      "progress": 0,
-      "status": "1111",
-      "id": 59
-    },
-    {
-      "firstName": "qwe",
-      "lastName": "qwe",
-      "age": "22",
-      "visits": 0,
-      "progress": 0,
-      "status": "free",
-      "id": 60
+      "login": "user",
+      "password": "user",
+      "preferences": false
     }
   ]
 }
