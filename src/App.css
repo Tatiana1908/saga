@@ -169,3 +169,18 @@ input{
 .aside-link a:hover{
   font-weight: 600;
 }
+.signup-block{
+  margin: 30px auto;
+}
+.login-form{
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 340px;
+}
+.login-form .btn-default{
+  align-self: center;
+}
